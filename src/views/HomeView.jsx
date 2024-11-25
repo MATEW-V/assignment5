@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Hero from "../src/components/Hero.jsx"
 import "./HomeView.css";
 
 function HomeView() {
@@ -12,8 +13,7 @@ function HomeView() {
         </div>
       </header>
       <div className="hero-content">
-        <h1>Unlimited movies, TV shows, and more.</h1>
-        <p>Watch anywhere. Cancel anytime.</p>
+        <Hero/>
       </div>
     </div>
   )
