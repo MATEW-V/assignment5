@@ -1,1 +1,1 @@
-import "./Feature.css"
+import "./Feature.css";
