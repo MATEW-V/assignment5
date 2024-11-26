@@ -21,3 +21,7 @@
 .buttons .button:hover {
     background: #f40612; /* Slightly brighter red for hover */
 }
+.main {
+    width: 100%;
+    height: 100%;
+}
