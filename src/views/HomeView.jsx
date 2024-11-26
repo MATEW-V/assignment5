@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import Hero from "../src/components/Hero.jsx"
-import Header from "../src/components/Header.jsx"
-import Footer from "../src/components/Footer.jsx"
+import Hero from "./components/Hero.jsx";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 import "./HomeView.css";
 
 function HomeView() {

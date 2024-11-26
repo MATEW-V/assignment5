@@ -6,3 +6,18 @@
     padding-bottom: 12px;
     height: 85vh;
 }
+
+.buttons .button {
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 10px;
+    background: #e50914; /* Netflix Red */
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.buttons .button:hover {
+    background: #f40612; /* Slightly brighter red for hover */
+}

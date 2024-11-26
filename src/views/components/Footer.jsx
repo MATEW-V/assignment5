@@ -1,8 +1,7 @@
-import 'Footer.css';
+import './Footer.css';
 
 function Footer() {
     return (
-        
         <div class="footer">
             <div class="socialIcons">
                 <a href=""><i class="fa-brands fa-facebook"></i></a>
