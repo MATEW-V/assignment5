@@ -10,16 +10,16 @@ import './App.css'
 function App() {
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<HomeView />} />
-      <Route path="/register" element={<RegisterView />} />
-      <Route path="/login" element={<LoginView />} />
-      <Route path="/movies" element={<MoviesView />}>
-        <Route path="all" element={<AllMoviesView />} />
-        <Route path=":id" element={<DetailsView />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeView />} />
+        <Route path="/register" element={<RegisterView />} />
+        <Route path="/login" element={<LoginView />} />
+        <Route path="/movies" element={<MoviesView />}>
+          <Route path="all" element={<AllMoviesView />} />
+          <Route path=":id" element={<DetailsView />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

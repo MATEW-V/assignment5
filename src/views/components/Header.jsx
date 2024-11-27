@@ -9,20 +9,19 @@ function Header() {
             </div>
             <div className="menu">
                 <ul className="navigation">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">HELP</a></li>
-                <li>
-                    <div className="search">
-                        <div className="searchbox">
-                            <input type="text" placeholder="Search..." />
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">HELP</a></li>
+                    <li>
+                        <div className="search">
+                            <div className="searchbox">
+                                <input type="text" placeholder="Search..." />
+                            </div>
+                            <button className="butsearch">Search</button>
                         </div>
-                        <button className="butsearch">Search</button>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
             </div>
-            
         </div>
     )
 }

@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    }
-    
+}
+
 .hero-content {
     width: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6)50%, rgba(0, 0, 0, 0.6)50%), url(mviebackground.jpg);
@@ -16,7 +16,7 @@
     color: #fff;
     padding: 10px 20px;
     margin-left: 10px;
-    background: #e50914; /* Netflix Red */
+    background: #e50914;
     border-radius: 4px;
     text-decoration: none;
     font-size: 16px;
@@ -24,8 +24,9 @@
 }
 
 .buttons .button:hover {
-    background: #f40612; /* Slightly brighter red for hover */
+    background: #f40612;
 }
+
 .main {
     width: 100%;
     height: 100%;

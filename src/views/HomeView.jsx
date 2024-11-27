@@ -8,7 +8,7 @@ function HomeView() {
   return (
     <div className="main">
       <div className="navbar">
-        <Header/>
+        <Header />
         <div className="buttons">
           <Link to={`/register`} className="button">Register</Link>
           <Link to={`/login`} className="button">Login</Link>

@@ -1,7 +1,7 @@
 import "./Feature.css";
 
-function Feature () {
-    return(
+function Feature() {
+    return (
         <div >
         </div>
     )
