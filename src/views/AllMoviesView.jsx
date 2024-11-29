@@ -11,7 +11,7 @@ function AllMoviesView() {
   useEffect(() => {
     (async function getMovies() {
       const response = await axios.get(
-        `https://api.themoviedb.org/3/movie/now_playing?api_key=${import.meta.env.VITE_TMDB_KEY}`
+        `https://api.themoviedb.org/3/movie/now_playing?api_key=${import.meta.env.be3c7266366ad88b56a8397a0a3e668d}`
       );
       setMovies(response.data.results);
     })();

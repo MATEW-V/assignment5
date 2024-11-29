@@ -1,9 +1,9 @@
 import "./Feature.css";
 
-function Feature() {
+function Feature (){
     return (
-        <div >
-        </div>
+        <></>
     )
 }
+
 export default Feature;

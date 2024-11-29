@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import Hero from "./components/Hero.jsx";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import Feature from "./components/Feature.jsx"
 import "./HomeView.css";
 
 function HomeView() {
@@ -9,13 +9,12 @@ function HomeView() {
     <div className="main">
       <div className="navbar">
         <Header />
-        <div className="buttons">
-          <Link to={`/register`} className="button">Register</Link>
-          <Link to={`/login`} className="button">Login</Link>
-        </div>
       </div>
       <div className="hero-content">
         <Hero />
+      </div>
+      <div className="feature-rand">
+        <Feature />
       </div>
       <div className="Footer">
         <Footer />
