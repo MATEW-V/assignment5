@@ -1,5 +1,5 @@
 /* General container for the app */
-.app-container {
+.appcontainer {
   background-color: #141414; /* Dark background */
   color: white;
   min-height: 100vh;

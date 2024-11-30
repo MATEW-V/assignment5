@@ -1,4 +1,5 @@
 import style1 from "./Feature.module.css";
+import { Link } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 
 function Feature() {
@@ -36,13 +37,9 @@ function Feature() {
                         <div className={style1.moviebox} key={movie.id}>
                             <img className={style1.movieposter} src={movieImage} alt={movie.title} />
                             <h3>{movie.title}</h3>
-                            <a className={style1.detailbut}
-                                href={`https://www.themoviedb.org/movie/${movie.id}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                View Details
-                            </a>
+                            <div className={style1.detailbut}>
+                            <Link to={`/movies/`+movie.id} className={style1.dbutton}>Details</Link>
+                            </div>
                         </div>
                     )
                 })}

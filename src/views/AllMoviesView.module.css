@@ -1,5 +1,5 @@
 /* Main Movies Container in Grid Format */
-.movies-container {
+.moviescontainer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
@@ -7,7 +7,7 @@
 }
 
 /* Individual Movie Card */
-.movie-card {
+.moviecard {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -19,14 +19,18 @@
     text-align: center;
 }
 
-.movie-card:hover {
+.moviecard:hover {
     transform: scale(1.05);
 }
 
 /* Movie Poster Image */
-.movie-poster {
+.movieposter {
     width: 100%;
     height: 300px;
     object-fit: cover;
     transition: opacity 0.3s ease;
+}
+.dbutton {
+    text-decoration: none;
+    color: #fff;
 }

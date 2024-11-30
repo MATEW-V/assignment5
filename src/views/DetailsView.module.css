@@ -1,4 +1,4 @@
-.movie-detail {
+.moviedetail {
     background-color: #141414; /* Dark background */
     color: white; /* White text for contrast */
     padding: 20px;
@@ -8,39 +8,39 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
   }
   
-  .movie-title {
+  .movietitle {
     font-size: 2.5em; /* Large title */
     margin-bottom: 10px; /* Spacing below title */
   }
   
-  .movie-overview {
+  .movieoverview {
     font-size: 1.2em; /* Slightly larger overview text */
     margin: 15px 0; /* Spacing above and below overview */
     line-height: 1.5; /* Improved readability */
   }
   
-  .movie-info {
+  .movieinfo {
     font-size: 1em; /* Regular font size for info */
     margin: 20px 0; /* Spacing around info */
   }
   
-  .movie-poster {
+  .movieposter {
     width: 100%; /* Full width for the poster */
     border-radius: 10px; /* Rounded corners for the poster */
     margin: 15px 0; /* Spacing above and below poster */
   }
   
-  .trailers-section {
+  .trailerssection {
     margin-top: 30px; /* Space above trailers section */
   }
   
-  .trailers-grid {
+  .trailersgrid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid layout */
     gap: 15px; /* Space between trailer tiles */
   }
   
-  .trailer-tile {
+  .trailertile {
     position: relative; /* For better positioning */
     overflow: hidden; /* Hide overflow for rounded corners */
     border-radius: 8px; /* Rounded corners for trailer tiles */
@@ -48,17 +48,17 @@
     transition: transform 0.2s; /* Smooth hover effect */
   }
   
-  .trailer-tile:hover {
+  .trailertile:hover {
     transform: scale(1.05); /* Scale effect on hover */
   }
   
-  .trailer-thumbnail {
+  .trailerthumbnail {
     width: 100%; /* Full width for thumbnails */
     height: auto; /* Auto height for aspect ratio */
     border-radius: 8px; /* Rounded corners for thumbnails */
   }
   
-  .trailer-tile h3 {
+  .trailertile h3 {
     position: absolute; /* Position text over the thumbnail */
     bottom: 10px; /* Positioning from the bottom */
     left: 10px; /* Positioning from the left */
