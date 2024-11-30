@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import style from"./AllMoviesView.module.css";
+import style6 from"./AllMoviesView.module.css";
 
 function AllMoviesView() {
   const [movies, setMovies] = useState([]);
@@ -22,13 +22,13 @@ function AllMoviesView() {
   }
 
   return (
-    <div className={style.movies-container}>
+    <div className={style6.movies-container}>
       {movies.map((movie) => (
-        <div key={movie.id} className="movie-card" onClick={() => { loadMovie(movie.id) }}>
+        <div key={movie.id} className={style6.movie-card} onClick={() => { loadMovie(movie.id) }}>
           <img
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title}
-            className={style.movie-poster}
+            className={style6.movie-poster}
           />
         </div>
       ))}

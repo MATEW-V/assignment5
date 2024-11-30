@@ -1,10 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "./DetailsView.module.css"
+import style7 from "./DetailsView.module.css"
 
 function DetailMovieView() {
-
   const [movie, setMovie] = useState([]);
   const params = useParams();
 
@@ -18,34 +17,34 @@ function DetailMovieView() {
   }, []);
 
   return (
-    <div className="movie-detail">
-      <h1 className="movie-title">{movie.original_title}</h1>
-      <p className="movie-overview">{movie.overview}</p>
-      <div className="movie-info">
+    <div className={style7.movie-detail}>
+      <h1 className={style7.movie-title}>{movie.original_title}</h1>
+      <p className={style7.movie-overview}>{movie.overview}</p>
+      <div className={style7.movie-info}>
         <p><strong>Release Date:</strong> {movie.release_date}</p>
         <p><strong>Runtime:</strong> {movie.runtime} minutes</p>
       </div>
       {movie.poster_path && (
         <img
-          className="movie-poster"
+          className={style7.movie-poster}
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
           alt={movie.original_title}
         />
       )}
 
       {/* Trailers Section */}
-      <div className="trailers-section">
+      <div className={style7.trailers-section}>
         <h2>Trailers</h2>
-        <div className="trailers-grid">
+        <div className={style7.trailers-grid}>
           {movie.videos && movie.videos.results.map((trailer) => (
-            <div key={trailer.id} className="trailer-tile">
+            <div key={trailer.id} className={style7.trailer-tile}>
               <a
                 href={`https://www.youtube.com/watch?v=${trailer.key}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  className="trailer-thumbnail"
+                  className={style7.trailer-thumbnail}
                   src={`https://img.youtube.com/vi/${trailer.key}/0.jpg`}
                   alt={trailer.name}
                 />

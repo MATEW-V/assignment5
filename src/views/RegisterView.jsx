@@ -1,9 +1,9 @@
-import style from "./RegisterView.module.css";
+import style10 from "./RegisterView.module.css";
 
 function RegisterView() {
   return (
-    <div className={style.register-container}>
-        <div className={style.form-container}>
+    <div className={style10.registercontainer}>
+        <div className={style10.formcontainer}>
             <h2>Create an Account</h2>
             <form action="#" method="POST">
                 <label htmlFor="email">Email</label>
@@ -17,7 +17,7 @@ function RegisterView() {
                 
                 <button type="submit" className="register-button">Register</button>
             </form>
-            <p className={style.login-link}>Already have an account? <a href="#">Login</a></p>
+            <p className={style10.loginlink}>Already have an account? <a href="#">Login</a></p>
         </div>
     </div>
   )
