@@ -1,5 +1,5 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import "./MoviesView.css";
+import style from "./MoviesView.module.css";
 
 function MoviesView() {
 
@@ -10,8 +10,8 @@ function MoviesView() {
   }
 
   return (
-    <div className="app-container">
-      <div className="header">
+    <div className={style.app-container}>
+      <div className={style.header}>
         <h1>Welcome, User!</h1>
         <button onClick={() => logout()} className="logout-button">Logout</button>
       </div>

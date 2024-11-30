@@ -1,36 +1,36 @@
-import './Header.css';
+import style3 from './Header.module.css';
 import { Link } from "react-router-dom";
 
 function Header() {
     return (
-        <div className="nbar">
-            <div className="icon">
-                <h2 className="logo">ACI Theatre</h2>
+        <div className={style3.nbar}>
+            <div className={style3.icon}>
+                <h2 className={style3.logo}>ACI Theatre</h2>
             </div>
-            <div className="menu">
-                <ul className="navigation">
+            <div className={style3.menu}>
+                <ul className={style3.navigation}>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">HELP</a></li>
                     <li>
-                        <div className="search">
-                            <div className="searchbox">
+                        <div className={style3.search}>
+                            <div className={style3.searchbox}>
                                 <input type="text" placeholder="Search..." />
                             </div>
-                            <button className="butsearch">Search</button>
+                            <button className={style3.butsearch}>Search</button>
                         </div>
                     </li>
                     <li>
-                        <div className='buttons'>
-                            <div className="register">
-                                <Link to={`/register`} className="button">SIGN UP</Link>
+                        <div className={style3.buttons}>
+                            <div className={style3.register}>
+                                <Link to={`/register`} className={style3.button}>SIGN UP</Link>
                             </div>
                         </div>
                     </li>
                     <li>
-                        <div className='buttons'>
-                             <div className="login">
-                                <Link to={`/login`} className="button">LOG IN</Link>
+                        <div className={style3.buttons}>
+                             <div className={style3.login}>
+                                <Link to={`/login`} className={style3.button}>LOG IN</Link>
                             </div>
                         </div>
                     </li>

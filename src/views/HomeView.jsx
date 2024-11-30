@@ -2,21 +2,21 @@ import Hero from "./components/Hero.jsx";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Feature from "./components/Feature.jsx"
-import "./HomeView.css";
+import style5 from "./HomeView.module.css";
 
 function HomeView() {
   return (
-    <div className="main">
-      <div className="navbar">
+    <div className={style5.main}>
+      <div className={style5.navbar}>
         <Header />
       </div>
-      <div className="hero-content">
+      <div className={style5.herocontent}>
         <Hero />
       </div>
-      <div className="feature-rand">
+      <div className={style5.featurerand}>
         <Feature />
       </div>
-      <div className="Footer">
+      <div className={style5.footer}>
         <Footer />
       </div>
     </div>

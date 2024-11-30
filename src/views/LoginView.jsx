@@ -1,5 +1,5 @@
 import React from 'react';
-import './LoginView.css';
+import './LoginView.module.css';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 

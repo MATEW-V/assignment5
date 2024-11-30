@@ -1,8 +1,8 @@
-import './Hero.css';
+import style4 from './Hero.module.css';
 
 function Hero () {
     return(
-        <div class="content">
+        <div class={style4.content}>
             <h1>Unlimited Shows and Movies.<br/>Anywhere. Anytime.</h1>
         </div>
     )
