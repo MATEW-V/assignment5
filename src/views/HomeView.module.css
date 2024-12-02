@@ -8,8 +8,7 @@
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6)50%, rgba(0, 0, 0, 0.6)50%), url(mviebackground.jpg);
     background-position: center;
     background-size: cover;
-    padding-bottom: 12px;
-    height: 85vh;
+    height: 80vh;
 }
 
 .main {

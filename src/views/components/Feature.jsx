@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 
 function Feature() {
     const [movies, setMovies] = useState([]); 
-    const randmovie = Math.floor(Math.random() * 13);
-    const randpage = Math.floor(Math.random() * 21);
+    const randmovie = Math.floor(Math.random() * 16);
+    const randpage = Math.floor(Math.random() * 20);
     const apiUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=be3c7266366ad88b56a8397a0a3e668d&language=en-US&page=`+randpage;
 
     useEffect(() => {
@@ -13,7 +13,7 @@ function Feature() {
             try {
                 const response = await fetch(apiUrl);
                 const data = await response.json();
-                setMovies(data.results.slice(randmovie, randmovie+6)); // random movie then next six
+                setMovies(data.results.slice(randmovie, randmovie+4)); // random movie then next six
             } catch (error) {
                 setError('Failed to fetch movies');
             }
