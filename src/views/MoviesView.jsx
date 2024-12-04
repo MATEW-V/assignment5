@@ -11,10 +11,6 @@ function MoviesView() {
 
   return (
     <div className={style9.appcontainer}>
-      <div className={style9.header}>
-        <h1>Welcome, User!</h1>
-        <button onClick={() => logout()} className={style9.logoutbutton}>Logout</button>
-      </div>
       <Outlet />
     </div>
   );

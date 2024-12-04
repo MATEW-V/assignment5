@@ -3,7 +3,7 @@ import HomeView from "../src/views/HomeView";
 import RegisterView from "../src/views/RegisterView";
 import LoginView from "../src/views/LoginView";
 import MoviesView from "../src/views/MoviesView";
-import AllMoviesView from "../src/views/AllMoviesView";
+import GenreLogin from "../src/views/GenreLogin"
 import DetailsView from "../src/views/DetailsView";
 import './App.css'
 
@@ -15,7 +15,7 @@ function App() {
         <Route path="/register" element={<RegisterView />} />
         <Route path="/login" element={<LoginView />} />
         <Route path="/movies" element={<MoviesView />}>
-          <Route path="all" element={<AllMoviesView />} />
+          <Route path="genre" element={<GenreLogin />} />
           <Route path=":id" element={<DetailsView />} />
         </Route>
       </Routes>
