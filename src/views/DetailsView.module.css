@@ -63,12 +63,13 @@
 .trailerssection {
   display: inline-block;
   position: relative;
-  bottom: 600px;
+  bottom: 860px;
+  left: 490px;
   flex-grow: 1;
   margin-top: 30px;
   padding: 20px;
   color: #b0c8a0;
-  width: 700px;
+  width: 680px;
 }
 
 .trailerssection h2 {
