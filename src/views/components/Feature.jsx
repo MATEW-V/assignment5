@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 function Feature() {
     const [movies, setMovies] = useState([]);
-    const randmovie = Math.floor(Math.random() * 16);
+    const randmovie = Math.floor(Math.random() * 12);
     const randpage = Math.floor(Math.random() * 20);
     const apiUrl = `https://api.themoviedb.org/3/movie/now_playing?api_key=be3c7266366ad88b56a8397a0a3e668d&language=en-US&page=` + randpage;
 
