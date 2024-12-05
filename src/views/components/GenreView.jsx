@@ -10,7 +10,7 @@ function GenreView({ genresList, onGenreClick }) {
         </li></ul>
       ))}
     </div>
-  );
+  )
 }
 
 export default GenreView;

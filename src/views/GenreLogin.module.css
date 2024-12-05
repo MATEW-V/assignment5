@@ -12,7 +12,7 @@
     width: 220px;
     height: 1840px;
     background-color: rgb(0, 170, 113);
-    
+
 }
 
 .genredisp {
@@ -24,7 +24,6 @@
     background-color: rgb(58, 58, 58);
 }
 
-/* Individual Movie Card */
 .moviecard {
     border-radius: 8px;
     overflow: hidden;

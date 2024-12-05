@@ -29,7 +29,7 @@ function Header() {
                     </li>
                     <li>
                         <div className={style3.buttons}>
-                             <div className={style3.login}>
+                            <div className={style3.login}>
                                 <Link to={`/login`} className={style3.button}>LOG IN</Link>
                             </div>
                         </div>

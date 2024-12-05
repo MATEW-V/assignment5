@@ -2,9 +2,9 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 import style6 from "./GenreLogin.module.css";
 import GenreView from "./components/GenreView.jsx";
-import Footer from "./components/Footer.jsx";
 
 function GenreLogin() {
   const [movies, setMovies] = useState([]);

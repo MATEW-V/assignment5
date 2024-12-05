@@ -1,71 +1,117 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.appcontainer {
+  background-color: rgb(58, 58, 58);
+  color: #e0e0e0;
+  font-family: 'Arial', sans-serif;
+}
+
 .moviedetail {
-    background-color: #141414; /* Dark background */
-    color: white; /* White text for contrast */
-    padding: 20px;
-    max-width: 800px; /* Limit width for better readability */
-    margin: auto; /* Center the content */
-    border-radius: 10px; /* Slightly rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
-  }
-  
-  .movietitle {
-    font-size: 2.5em; /* Large title */
-    margin-bottom: 10px; /* Spacing below title */
-  }
-  
-  .movieoverview {
-    font-size: 1.2em; /* Slightly larger overview text */
-    margin: 15px 0; /* Spacing above and below overview */
-    line-height: 1.5; /* Improved readability */
-  }
-  
-  .movieinfo {
-    font-size: 1em; /* Regular font size for info */
-    margin: 20px 0; /* Spacing around info */
-  }
-  
-  .movieposter {
-    width: 100%; /* Full width for the poster */
-    border-radius: 10px; /* Rounded corners for the poster */
-    margin: 15px 0; /* Spacing above and below poster */
-  }
-  
-  .trailerssection {
-    margin-top: 30px; /* Space above trailers section */
-  }
-  
-  .trailersgrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid layout */
-    gap: 15px; /* Space between trailer tiles */
-  }
-  
-  .trailertile {
-    position: relative; /* For better positioning */
-    overflow: hidden; /* Hide overflow for rounded corners */
-    border-radius: 8px; /* Rounded corners for trailer tiles */
-    cursor: pointer; /* Pointer on hover */
-    transition: transform 0.2s; /* Smooth hover effect */
-  }
-  
-  .trailertile:hover {
-    transform: scale(1.05); /* Scale effect on hover */
-  }
-  
-  .trailerthumbnail {
-    width: 100%; /* Full width for thumbnails */
-    height: auto; /* Auto height for aspect ratio */
-    border-radius: 8px; /* Rounded corners for thumbnails */
-  }
-  
-  .trailertile h3 {
-    position: absolute; /* Position text over the thumbnail */
-    bottom: 10px; /* Positioning from the bottom */
-    left: 10px; /* Positioning from the left */
-    color: white; /* White text for contrast */
-    font-size: 0.9em; /* Slightly smaller font size */
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 5px; /* Padding around text */
-    border-radius: 4px; /* Rounded corners for text background */
-  }
-  
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.movietitle {
+  font-size: 2.5rem;
+  color: #b0c8a0;
+  text-align: center;
+}
+
+.movieoverview {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  color: #e0e0e0;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.movieinfo {
+  background-color: rgb(58, 58, 58);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: #e0e0e0;
+}
+
+.movieinfo p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.moviedetail-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.movieposter {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.trailerssection {
+  display: inline-block;
+  position: relative;
+  bottom: 600px;
+  flex-grow: 1;
+  margin-top: 30px;
+  padding: 20px;
+  color: #b0c8a0;
+  width: 700px;
+}
+
+.trailerssection h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.trailersgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.trailertile {
+  background-color: rgb(58, 58, 58);
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.trailertile:hover {
+  background-color: #4e4e4e;
+}
+
+.trailerthumbnail {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.trailertile h3 {
+  font-size: 1.2rem;
+  color: #b0c8a0;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.trailertile a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.trailertile a:hover {
+  opacity: 0.8;
+}

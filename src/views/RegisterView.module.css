@@ -1,6 +1,6 @@
 .body {
     font-family: Arial, sans-serif;
-    background-color: #141414; /* Dark background */
+    background-color: #141414; 
     color: #fff;
     display: flex;
     justify-content: center;
@@ -8,7 +8,6 @@
     height: 100vh;
 }
 
-/* Container for Register Form */
 .registercontainer {
     width: 100%;
     max-width: 400px;
@@ -44,12 +43,12 @@
     margin-bottom: 10px;
 }
 
-/* Register Button */
+
 .registerbutton {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    background: #e50914; /* Netflix Red */
+    background: #e50914; 
     color: #fff;
     font-size: 1em;
     border: none;
@@ -59,7 +58,7 @@
 }
 
 .registerbutton:hover {
-    background: #f40612; /* Slightly brighter red for hover */
+    background: #f40612; 
 }
 
 .loginlink {
