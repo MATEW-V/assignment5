@@ -16,8 +16,7 @@ function Feature() {
                 setMovies(data.results.slice(randmovie, randmovie + 4)); // random movie then next six
             } catch (error) {
                 setError('Failed to fetch movies');
-            }
-        };
+            }};
         fetchMovies();
     }, []);
 
