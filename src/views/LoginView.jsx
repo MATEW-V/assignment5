@@ -24,10 +24,8 @@ function LoginView() {
           <form onSubmit={(event) => { login(event) }}>
             <label htmlFor="email">Email</label>
             <input type="email" id="email" name="email" required />
-
             <label htmlFor="password">Password</label>
             <input type="password" id="password" name="password" value={password} onChange={(event) => { setPassword(event.target.value) }} required />
-
             <button type="submit" className={style8.loginbutton}>Login</button>
           </form>
           <p className={style8.registerlink}>New to ACI Theatre? <a href="#">Register now</a></p>
