@@ -17,19 +17,21 @@ function LoginView() {
   }
 
   return (
-    <div className={style8.logincontainer}>
-      <div className={style8.formcontainer}>
-        <h2>Login to Your Account</h2>
-        <form onSubmit={(event) => { login(event) }}>
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" required />
+    <div className={style8.body}>
+      <div className={style8.logincontainer}>
+        <div className={style8.formcontainer}>
+          <h2>Login to Your Account</h2>
+          <form onSubmit={(event) => { login(event) }}>
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" name="email" required />
 
-          <label htmlFor="password">Password</label>
-          <input type="password" id="password" name="password" value={password} onChange={(event) => { setPassword(event.target.value) }} required />
+            <label htmlFor="password">Password</label>
+            <input type="password" id="password" name="password" value={password} onChange={(event) => { setPassword(event.target.value) }} required />
 
-          <button type="submit" className={style8.loginbutton}>Login</button>
-        </form>
-        <p className={style8.registerlink}>New to ACI Theatre? <a href="#">Register now</a></p>
+            <button type="submit" className={style8.loginbutton}>Login</button>
+          </form>
+          <p className={style8.registerlink}>New to ACI Theatre? <a href="#">Register now</a></p>
+        </div>
       </div>
     </div>
   );

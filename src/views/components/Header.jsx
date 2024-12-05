@@ -9,7 +9,7 @@ function Header() {
             </div>
             <div className={style3.menu}>
                 <ul className={style3.navigation}>
-                    <li><a href="#">HOME</a></li>
+                    <li><a><Link to={`/`}>HOME</Link></a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">HELP</a></li>
                     <li>
