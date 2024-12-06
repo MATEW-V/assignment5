@@ -8,21 +8,29 @@ import GenreView from "./components/GenreView.jsx";
 
 function GenreLogin() {
   const [movies, setMovies] = useState([]);
-  const [selectedGenreId, setSelectedGenreId] = useState(null);
+  const [page, setPage] = useState(1);
+  const [selectedGenreId, setSelectedGenreId] = useState(28);
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchMovies = async () => {
       const url = selectedGenreId
         ? `https://api.themoviedb.org/3/discover/movie?api_key=be3c7266366ad88b56a8397a0a3e668d&with_genres=${selectedGenreId}`
-        : `https://api.themoviedb.org/3/movie/now_playing?api_key=be3c7266366ad88b56a8397a0a3e668d`; 
-      
+        : `https://api.themoviedb.org/3/discover/movie?api_key=be3c7266366ad88b56a8397a0a3e668d&with_genres=28`;
+
       const response = await axios.get(url);
       setMovies(response.data.results);
     };
 
     fetchMovies();
-  }, [selectedGenreId]); 
+  }, [selectedGenreId]);
+
+  async function getMoviesByPage(page) {
+    const response = await axios.get(
+      `https://api.themoviedb.org/3/discover/movie?api_key=be3c7266366ad88b56a8397a0a3e668d&with_genres=${selectedGenreId}&page=${page}`
+    );
+    setMovies(response.data.results);
+  }
 
   function loadMovie(id) {
     navigate(`/movies/${id}`);
@@ -54,6 +62,22 @@ function GenreLogin() {
       <div className={style6.loginfeat}>
         <div className={style6.genrelist}>
           <GenreView genresList={genres} onGenreClick={handleGenreClick} />
+          <div className={style6.spacer}>
+          </div>
+          <div className={style6.pageturner}>
+            <p>
+              <a onClick={() => {
+                if (page > 1) {
+                  setPage(page - 1), getMoviesByPage(page - 1)
+                }
+              }}>Previous Page<br/></a>
+              <a onClick={() => {
+                if (page < 50) {
+                  setPage(page + 1), getMoviesByPage(page + 1)
+                }
+              }}>Next Page</a></p>
+              <p>Page {page}<br/></p>
+          </div>
         </div>
         <div className={style6.genredisp}>
           {movies.map((movie) => (

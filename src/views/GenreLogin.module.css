@@ -4,15 +4,13 @@
 }
 
 .appcontainer {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 170, 113);
 }
 
 .genrelist {
     position: absolute;
     width: 220px;
-    height: 1840px;
     background-color: rgb(0, 170, 113);
-
 }
 
 .genredisp {
@@ -51,4 +49,27 @@
 .dbutton {
     text-decoration: none;
     color: #000000;
+}
+.pageturner {
+    color: white;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    height: 100px;
+    text-align: center;
+    border-radius: 8px;
+}
+.pageturner a,
+.pageturner p{
+    width: 100%;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+.pageturner a:hover{
+    color: #555;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.spacer{
+    height: 1700px;
 }

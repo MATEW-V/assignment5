@@ -1,18 +1,22 @@
-.body {
-    font-family: Arial, sans-serif;
-    background-color: #141414; 
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-.registercontainer {
+.body {
     width: 100%;
-    max-width: 400px;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6)50%, rgba(0, 0, 0, 0.6)50%), url(mviebackground.jpg);
+}
+
+.logincontainer {
+    position: relative;
+    justify-self: center;
+    top: 180px;
+    width: 100%;
+    max-width: 800px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.75);
+    background-color: rgb(39, 39, 39);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -21,6 +25,7 @@
 .formcontainer h2 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #c7c6c6;
 }
 
 .formcontainer label {
@@ -30,10 +35,10 @@
     font-size: 0.9em;
     color: #b3b3b3;
 }
-
+.formcontainer input[type="text"],
 .formcontainer input[type="email"],
 .formcontainer input[type="password"] {
-    width: 100%;
+    width: 97%;
     padding: 10px;
     background: #333;
     border: none;
@@ -43,12 +48,11 @@
     margin-bottom: 10px;
 }
 
-
-.registerbutton {
+.loginbutton {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    background: #e50914; 
+    background: rgb(26, 160, 86);
     color: #fff;
     font-size: 1em;
     border: none;
@@ -57,21 +61,16 @@
     transition: background 0.3s;
 }
 
-.registerbutton:hover {
-    background: #f40612; 
+.loginbutton:hover {
+    background: #636363;
 }
 
-.loginlink {
+.registerlink {
     margin-top: 15px;
     font-size: 0.9em;
     color: #b3b3b3;
 }
 
-.loginlink a {
-    color: #e50914;
-    text-decoration: none;
-}
-
-.loginlink a:hover {
-    text-decoration: underline;
+.registerlink a {
+    color: rgb(26, 160, 86);
 }

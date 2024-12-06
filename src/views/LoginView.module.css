@@ -35,7 +35,7 @@
     font-size: 0.9em;
     color: #b3b3b3;
 }
-
+.formcontainer input[type="text"],
 .formcontainer input[type="email"],
 .formcontainer input[type="password"] {
     width: 97%;
